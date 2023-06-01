@@ -1,6 +1,6 @@
 {
   "name": "krp-livetiming-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LiveTiming Client for Kart Racing Pro",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
