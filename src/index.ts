@@ -1,2 +1,2 @@
 export {ClientClient, ClientUpdateDataT} from "./classes/ClientClient";
-export {ServerClient, ServerClientDataT} from "./classes/ServerClient";
+export {ServerClient, ServerUpdateDataT} from "./classes/ServerClient";

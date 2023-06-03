@@ -20,7 +20,7 @@ import {TrackSegmentT} from "krp-node-wrapper/dist/types/TrackSegmentT";
 import {TrackPositionT} from "krp-node-wrapper/dist/types/TrackPositionT";
 import {ContactT} from "krp-node-wrapper/dist/types/ContactT";
 
-export type ServerClientDataT =
+export type ServerUpdateDataT =
   EventT
   | EntryT
   | EntryRemoveT
