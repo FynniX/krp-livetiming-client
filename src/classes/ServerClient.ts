@@ -57,7 +57,7 @@ export class ServerClient {
     this.socket.on('disconnect', cb);
   }
 
-  handleUpdate(cb: (type: string, data: ServerClientDataT) => void) {
+  handleUpdate(cb: (type: string, data: ServerUpdateDataT) => void) {
     this.socket.on('update', cb);
   }
 }
