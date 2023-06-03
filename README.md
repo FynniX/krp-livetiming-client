@@ -14,10 +14,30 @@ This package was tested under [Node.js](https://nodejs.org/) 16.16.0 x64.
 
 ## Documentation
 
+# ClientClient
+
 ## Examples
 
 ```js
-const client = new Client("http://localhost:6878/")
+const clientClient = new ClientClient("http://localhost:6878/")
+```
+
+| Function           | Description              |
+|--------------------|--------------------------|
+| "handleUpdate"     | Callback for update.     |
+
+```js
+clientClient.handleUpdate((type: string, data: ClientUpdateDataT) => {
+    console.log(type, data)
+})
+```
+
+# ServerClient
+
+## Examples
+
+```js
+const serverClient = new ServerClient("http://localhost:6878/")
 ```
 
 | Function           | Description              |
@@ -27,7 +47,7 @@ const client = new Client("http://localhost:6878/")
 | "handleUpdate"     | Callback for update.     |
 
 ```js
-client.handleUpdate((type: string, data: UpdateDataT) => {
+serverClient.handleUpdate((type: string, data: ServerClientDataT) => {
     console.log(type, data)
 })
 ```
